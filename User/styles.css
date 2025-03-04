@@ -1,0 +1,58 @@
+.form {
+    max-width: 400px;
+    border: 1px solid #333;
+}
+
+.title {
+    font-size: 28px;
+    font-weight: 600;
+    letter-spacing: -1px;
+    color: #00bfff;
+    position: relative;
+}
+
+.title::before,
+.title::after {
+    position: absolute;
+    content: "";
+    height: 16px;
+    width: 16px;
+    border-radius: 50%;
+    left: 0px;
+    background-color: #00bfff;
+}
+
+.title::before {
+    width: 18px;
+    height: 18px;
+}
+
+.title::after {
+    width: 18px;
+    height: 18px;
+    animation: pulse 1s linear infinite;
+}
+
+@keyframes pulse {
+    from {
+        transform: scale(0.9);
+        opacity: 1;
+    }
+    to {
+        transform: scale(1.8);
+        opacity: 0;
+    }
+}
+
+.signin a:hover {
+    text-decoration: underline royalblue;
+}
+
+.submit {
+    border-radius: 10px;
+    font-size: 16px;
+}
+
+.submit:hover {
+    background-color: #00bfff96;
+}
